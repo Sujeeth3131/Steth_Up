@@ -15,7 +15,7 @@ class _Home_PageState extends State<Home_Page> {
       body: Column(
         children: [
           TextFormField(
-            decoration: InputDecoration(
+            decoration: InputDecoration(suffixText: "Edit",suffixStyle: TextStyle(color: Colors.orange),
                 hintText: "Search for the location,Insta jobs Near you",
                 hintStyle: TextStyle(color: Colors.black, fontSize: 15),
                 prefixIcon: Icon(

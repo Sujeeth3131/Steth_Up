@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:steth_up/splashScreen.dart';
+import 'package:steth_up/verify_screen.dart';
 
 import 'allow_page.dart';
 import 'home_page.dart';
 import 'home_page_1.dart';
 import 'map_page.dart';
 import 'map_page_1.dart';
+import 'otp_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,
-      home: Home_Page_1(),
+      home:Otp_screen(),
     );
   }
 }
