@@ -120,15 +120,17 @@ class _Home_Page_1State extends State<Home_Page_1> {
                     SizedBox(height:10,),
                     Row(
                       children: [
-                        Icon(Icons.currency_rupee,size: 16,color: Colors.orangeAccent,),
+                        Image(
+                            image: AssetImage("images/Group 138.png"),height: 19.35,width: 19.35,),
                         Text("20,000/mo"),
                         SizedBox(width: 10,),
-                        Icon(Icons.shopping_bag,size: 16,color: Colors.orangeAccent,),
+                        Image(image: AssetImage("images/Group 146.png"),height: 19.35,width: 19.35,),
                         SizedBox(width: 5,),
                         Text("2 yrs"),
 
                         SizedBox(width: 10,),
-                        Icon(Icons.school_rounded,size: 16,color: Colors.orangeAccent,),
+                        Image(
+                          image: AssetImage("images/Group (1) .png"),height: 19.35,width: 19.35,),
                         SizedBox(width: 5,),
                         Text("Nurshing")
                       ],

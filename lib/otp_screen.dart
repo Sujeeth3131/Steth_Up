@@ -76,14 +76,156 @@ class _Otp_screenState extends State<Otp_screen> {
               )),
             ),
             SizedBox(
-              height: 10,
+              height: 36,
             ),
-            Center(
-              child: Pinput(
-                length: 5,
-                keyboardType: TextInputType.number,
-              ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: 65,
+                      height: 59,
+                      decoration: BoxDecoration(
+                        color: Color(
+                          0xFFE6E6E6,
+                        ),borderRadius: BorderRadius.circular(10),
+
+                      ),
+
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom:6.0),
+                      child: Container(
+
+                        height: 51,
+                        width:63,
+                        decoration: BoxDecoration(
+                            color: Color(
+                              0xFFFFFFFF,
+                            ),borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Center(child: Text("8",style: TextStyle(color: Color(0xFF2E2E2E),fontWeight: FontWeight.w700,fontSize: 24),)),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: 65,
+                      height: 59,
+                      decoration: BoxDecoration(
+                          color: Color(
+                            0xFFE6E6E6,
+                          ),borderRadius: BorderRadius.circular(10)
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom:6.0),
+                      child: Container(
+
+                        height: 51,
+                        width:63,
+                        decoration: BoxDecoration(
+                            color: Color(
+                              0xFFFFFFFF,
+                            ),borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Center(child: Text("3",style: TextStyle(color: Color(0xFF2E2E2E),fontWeight: FontWeight.w700,fontSize: 24),)),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: 65,
+                      height: 59,
+                      decoration: BoxDecoration(
+                          color: Color(
+                            0xFFE6E6E6,
+                          ),borderRadius: BorderRadius.circular(10)
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom:6.0),
+                      child: Container(
+
+                        height: 51,
+                        width:63,
+                        decoration: BoxDecoration(
+                            color: Color(
+                              0xFFFFFFFF,
+                            ),borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Center(child: Text("2",style: TextStyle(color: Color(0xFF2E2E2E),fontWeight: FontWeight.w700,fontSize: 24),)),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: 65,
+                      height: 59,
+                      decoration: BoxDecoration(
+                          color: Color(
+                            0xFFE6E6E6,
+                          ),borderRadius: BorderRadius.circular(10)
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom:6.0),
+                      child: Container(
+
+                        height: 51,
+                        width:63,
+                        decoration: BoxDecoration(
+                            color: Color(
+                              0xFFFFFFFF,
+                            ),borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Center(child: Text("4",style: TextStyle(color: Color(0xFF2E2E2E),fontWeight: FontWeight.w700,fontSize: 24),)),
+                      ),
+                    ),
+                  ],
+                ),
+                Stack(
+                  alignment: Alignment.center,
+                  children: [
+                    Container(
+                      width: 65,
+                      height: 59,
+                      decoration: BoxDecoration(
+                          color: Color(
+                            0xFFE6E6E6,
+                          ),borderRadius: BorderRadius.circular(10)
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom:6.0),
+                      child: Container(
+
+                        height: 51,
+                        width:63,
+                        decoration: BoxDecoration(
+                            color: Color(
+                              0xFFFFFFFF,
+                            ),borderRadius: BorderRadius.circular(10)
+                        ),
+                        child: Center(child: Text("3",style: TextStyle(color: Color(0xFF2E2E2E),fontWeight: FontWeight.w700,fontSize: 24),)),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
             ),
+            SizedBox(height: 20,),
+
             SizedBox(
               height: 30,
             ),
@@ -96,14 +238,19 @@ class _Otp_screenState extends State<Otp_screen> {
                     fontSize: 24),
               ),
             ),
-            SizedBox(height: 15,),
+            SizedBox(
+              height: 15,
+            ),
             Center(
               child: SizedBox(
                 height: 20,
                 width: 20,
                 child: Center(
-                    child: CircularProgressIndicator(strokeWidth: 2,
-                  backgroundColor: Color(0xFF2E2E2E),
+                    child: CircularProgressIndicator(
+                      strokeWidth: 2,
+
+                  backgroundColor: Colors.black54,
+                      valueColor: AlwaysStoppedAnimation<Color>(Color(0xFF2E2E2E)),
                   color: Color(0xFFC4C4C4),
                 )),
               ),
@@ -131,7 +278,7 @@ class _Otp_screenState extends State<Otp_screen> {
               ),
             ),
             SizedBox(
-              height: 480,
+              height: 400,
             ),
             Padding(
               padding: const EdgeInsets.all(18.0),
