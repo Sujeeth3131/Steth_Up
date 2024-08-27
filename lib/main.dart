@@ -7,13 +7,22 @@ import 'package:steth_up/splashScreen.dart';
 import 'package:steth_up/star.dart';
 import 'package:steth_up/verify_screen.dart';
 
+import 'Course_page.dart';
+import 'Job Discription.dart';
 import 'allow_page.dart';
+import 'bottom_navjgation.dart';
 import 'frame_567.dart';
 import 'home_page.dart';
 import 'home_page_1.dart';
 import 'home_screen_2.dart';
 import 'home_screen_4.dart';
 import 'home_screen_5.dart';
+import 'interview_tab.dart';
+import 'job_application.dart';
+import 'location_1_screen.dart';
+import 'location_2_screen.dart';
+import 'location_3_screen.dart';
+import 'location_4_screen.dart';
 import 'map_page.dart';
 import 'map_page_1.dart';
 import 'otp_screen.dart';
@@ -49,7 +58,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
           useMaterial3: true,
         ),debugShowCheckedModeBanner: false,
-        home:Home_Screen_5(),
+        home:Interview_tab(),
     );
   }
 }
