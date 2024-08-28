@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -10,30 +11,21 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  void initState() {
+    super.initState();
+    navigateToSignUpPage();
+  }
+
+  void navigateToSignUpPage()async {
+    Future.delayed(Duration(seconds: 5), () async {
+      await Navigator.pushNamed(context, "/Home_Screen_5");
+    });
+  }
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF2C328B),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          SizedBox(
-            height: 300,
-          ),
-          Center(
-            child: Image(
-                height: 130,
-                width: 200,
-                image: AssetImage("images/Group 10.png")),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 105.0),
-            child: Text(
-              "Find Medical Jobs Near You Instantly",
-              style: TextStyle(color: Colors.white, fontSize: 16),
-            ),
-          )
-        ],
-      ),
+     body:Center(
+       child: Lottie.asset('images/Splash_Screen_final.json',fit: BoxFit.cover),
+     )
     );
   }
 }

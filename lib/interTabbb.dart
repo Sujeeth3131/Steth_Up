@@ -30,7 +30,6 @@ class _Interview_tabState extends State<Interview_tab> {
             Text(
                 "All applies,favorite,and interview opportunities will be listed here"),
             SizedBox(height: 24,),
-
             DefaultTabController(
               length: 3, child: TabBar(
                 tabs: [
@@ -753,10 +752,9 @@ class _Interview_tabState extends State<Interview_tab> {
             //
             //   ],
             // ),
-            TabBarView(children: [
-              //Controller atbcontroller(
 
-            ])
+
+
           ],
         ),
       ),

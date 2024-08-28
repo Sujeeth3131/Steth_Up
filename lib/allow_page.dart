@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
+import 'home_screen_3.dart';
+
 class Allow_Page extends StatefulWidget {
   const Allow_Page({super.key});
 
@@ -90,7 +92,12 @@ class _Allow_PageState extends State<Allow_Page> {
                         width: 388,
                         height: 57,
                         child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(builder: (context) => Home_Screen_3()),
+                              );
+                            },
                             style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(12),

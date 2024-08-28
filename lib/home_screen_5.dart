@@ -12,7 +12,8 @@ class _Home_Screen_5State extends State<Home_Screen_5> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
+      body:
+      Stack(
         children: [
         SlidingUpPanel(
           controller: panelController,
@@ -2810,7 +2811,8 @@ class _Home_Screen_5State extends State<Home_Screen_5> {
                   
                               ] ),
                         ),
-                      )
+                      ),
+
                     ],
                   ),
                 ),
